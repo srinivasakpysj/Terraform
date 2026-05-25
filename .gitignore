@@ -1,0 +1,90 @@
+# -----------------------------------
+# Terraform generated files
+# -----------------------------------
+
+.terraform/
+# Stores downloaded Terraform providers and module cache files
+
+.terraform.lock.hcl
+# Locks Terraform provider versions for consistent infrastructure deployments
+
+*.tfstate
+# Stores current Terraform infrastructure state information
+
+*.tfstate.*
+# Stores Terraform backup and additional state files
+
+*.tfplan
+# Stores Terraform execution plan output generated during planning
+
+crash.log
+# Stores Terraform crash logs for troubleshooting and debugging
+
+# -----------------------------------
+# Terraform variable files
+# -----------------------------------
+
+*.tfvars
+# Stores Terraform variable values and environment-specific configurations
+
+*.tfvars.json
+# JSON format Terraform variable files used in automation and CI/CD
+
+# -----------------------------------
+# Terraform override files
+# -----------------------------------
+
+override.tf
+# Local Terraform override configuration file for temporary changes
+
+override.tf.json
+# JSON format override configuration file for Terraform
+
+*_override.tf
+# Custom override Terraform configuration files
+
+*_override.tf.json
+# JSON format custom override Terraform files
+
+# -----------------------------------
+# Terraform CLI configuration
+# -----------------------------------
+
+terraform.rc
+# Terraform CLI configuration file containing local settings
+
+.terraformrc
+# Hidden Terraform CLI configuration file for provider/auth settings
+
+# -----------------------------------
+# Terraform module testing
+# -----------------------------------
+
+.terraform.tfstate.lock.info
+# Terraform state lock metadata file used during operations
+
+# -----------------------------------
+# Terraform sensitive files
+# -----------------------------------
+
+*.pem
+# Private key files used for Terraform-managed infrastructure access
+
+# -----------------------------------
+# Terraform logs
+# -----------------------------------
+
+terraform.log
+# Terraform debug log output file
+
+terraform.tfstate.backup
+# Backup copy of Terraform state file
+
+# -----------------------------------
+# Production Best Practice
+# -----------------------------------
+
+# Recommended:
+# - Store Terraform state remotely using S3 backend
+# - Enable DynamoDB state locking
+# - Never upload state files or secrets to Git repositories
